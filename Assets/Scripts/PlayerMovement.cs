@@ -5,7 +5,9 @@ using UnityEngine.AI;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public Animator animator;
     public CharacterController controller;
+    private Vector3 movement;
 
     public float speed = 6f;
     public float gravity = -9.81f;
@@ -15,15 +17,40 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         float time = Time.deltaTime;
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.z = Input.GetAxisRaw("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.z);
+        movement = movement.normalized;
+
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
+        Vector3 move = transform.right * movement.x + transform.forward * movement.z;
 
         controller.Move(move * speed * time);
 
         velocity.y += gravity * time;
 
         controller.Move(velocity * Time.deltaTime);
+
+
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        {
+            Debug.Log("yes");
+            animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+            animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        }
+
+    }
+    void FixedUpdate()
+    {
+        /*Debug.Log(Input.GetAxisRaw("Horizontal"));
+        if (Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Horizontal") == -1 || Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Vertical") == -1)
+        {
+            Debug.Log("yes");
+            animator.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
+            animator.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+        }*/
     }
 }

@@ -15,16 +15,7 @@ public class Billboard : MonoBehaviour
     
     void LateUpdate()
     {
-        if (!useStaticBillboard)
-        {
-            transform.LookAt(cam.transform);
-        }
-
-        else
-        {
-            transform.rotation = cam.transform.rotation;
-        }
-
-        transform.rotation = Quaternion.Euler(-20, transform.rotation.eulerAngles.y, 0f);
+        Vector3 targetPosition = new Vector3(cam.transform.position.x, transform.position.y, cam.transform.position.z);
+        transform.LookAt(targetPosition);
     }
 }
