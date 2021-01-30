@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class Billboard : MonoBehaviour
 {
-    public Camera cam;
-
-    public bool useStaticBillboard;
-
+    Camera target;
     void Start()
     {
-        cam = Camera.main;
+        target = Camera.main;
     }
-    
-    void LateUpdate()
+    void Update()
     {
-        Vector3 targetPosition = new Vector3(cam.transform.position.x, transform.position.y, cam.transform.position.z);
+
+        Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
+
+        Vector3 targetPosition = new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z);
+
         transform.LookAt(targetPosition);
     }
 }

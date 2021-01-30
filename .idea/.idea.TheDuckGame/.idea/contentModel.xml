@@ -9,7 +9,12 @@
         <e p="Scripts" t="Include">
           <e p="Billboard.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="MaterialExtensions.cs" t="Include" />
+          <e p="NextGoal.cs" t="Include" />
+          <e p="NPCFollow.cs" t="Include" />
+          <e p="ObjectsDeactivate.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="TransparentObject.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
