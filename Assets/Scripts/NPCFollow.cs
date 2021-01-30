@@ -19,7 +19,9 @@ public class NPCFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        nav = GetComponent<NavMeshAgent>();
+        nav = GetComponent<NavMeshAgent>(); 
+        navMeshAgent = gameObject.GetComponentInChildren<NavMeshAgent>();
+        
     }
     void Update()
     {
@@ -49,9 +51,7 @@ public class NPCFollow : MonoBehaviour
             animator.SetFloat("Vertical", -1);
             animator.SetFloat("Horizontal", 1);
         }
-        navMeshAgent = gameObject.GetComponentInChildren<NavMeshAgent>();
         if (navMeshAgent.hasPath)
             navMeshAgent.acceleration = (navMeshAgent.remainingDistance < closeEnoughMeters) ? deceleration : acceleration;
-
     }
 }
