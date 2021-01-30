@@ -5,8 +5,6 @@ using UnityEngine.AI;
 
 public class NPCFollow : MonoBehaviour
 {
-
-
     public Transform target;
     NavMeshAgent nav;
     private NavMeshAgent navMeshAgent;
