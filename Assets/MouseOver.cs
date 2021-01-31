@@ -28,12 +28,13 @@ public class MouseOver : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene(1);
+        Debug.Log("no");
+        //SceneManager.LoadScene(1);
     }
     public void ExitGame()    
     {
-        
-        Application.Quit();
+        Debug.Log("yes");
+        //Application.Quit();
     }
     void OnMouseExit() {
         button.sprite = sprite;
