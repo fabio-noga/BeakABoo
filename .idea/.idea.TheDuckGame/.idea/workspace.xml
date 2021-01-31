@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d6b00fd3-a42e-4a81-8a6f-b10e249811f3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,6 +70,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -99,6 +103,12 @@
       <updated>1611946660495</updated>
       <workItem from="1611946664921" duration="19832000" />
       <workItem from="1612021365439" duration="17532000" />
+      <workItem from="1612049141295" duration="583000" />
+      <workItem from="1612049747114" duration="13000" />
+      <workItem from="1612049809183" duration="690000" />
+      <workItem from="1612050522318" duration="128000" />
+      <workItem from="1612050667252" duration="40000" />
+      <workItem from="1612050787897" duration="576000" />
     </task>
     <servers />
   </component>
@@ -109,5 +119,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="846" y="85" width="916" height="711" key="SettingsEditor" timestamp="1612050677943">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="846" y="85" width="916" height="711" key="SettingsEditor/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1612050677943" />
   </component>
 </project>
