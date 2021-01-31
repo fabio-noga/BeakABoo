@@ -12,6 +12,7 @@ public class Goal : MonoBehaviour
     private AddDucklingToFollow add;
     private Light pLight;
     private PlayerMovement player;
+    public AudioSource quack;
     
     void Start()
     {
@@ -49,6 +50,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.CompareTag("Player") /* && collision.getcomponent<bush.cs>().canspawn == true*/)
         {
+            quack.Play();
             objective.SelectNextEnemy();
             player.speed = player.speed + 0.1f;
             objective.SelectNext();

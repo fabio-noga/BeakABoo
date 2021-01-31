@@ -11,6 +11,8 @@ public class Enemy : MonoBehaviour
     private NextGoal objective;
     public Transform selectedTarget;
     public Manager manager;
+    public GameObject Bush;
+    public AudioSource gulp;
     void Start()
     {
         manager = GameObject.Find("Manager").GetComponent<Manager>();
@@ -29,6 +31,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.CompareTag("Player") && add.maxDucklings.Count != 0)
         {
+            gulp.Play();
             objective.SelectNextEnemy();
             manager.score--;
             player.speed = player.speed - 0.1f;

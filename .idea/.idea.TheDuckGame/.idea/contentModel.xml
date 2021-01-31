@@ -95,6 +95,7 @@
           <e p="NPCFollow.cs" t="Include" />
           <e p="ObjectsDeactivate.cs" t="Include" />
           <e p="PlayerMovement.cs" t="Include" />
+          <e p="River.cs" t="Include" />
           <e p="TransparentObject.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
