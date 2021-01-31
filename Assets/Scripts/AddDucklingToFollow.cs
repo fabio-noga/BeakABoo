@@ -21,34 +21,28 @@ public class AddDucklingToFollow : MonoBehaviour
 
     public void AddDuckling()
     {
-        if (maxDucklings.Count < 10)
-        {
-            ducklingClone = Instantiate(duckling);
-            ducklingClone.transform.position = transform.position;
+        ducklingClone = Instantiate(duckling);
+        ducklingClone.transform.position = transform.position;
+        
 
-            if (maxDucklings.Count == 0)
-            {
-                ducklingClone.GetComponentInChildren<NPCFollow>().target = transform;
-                NavMeshAgent nav = ducklingClone.GetComponentInChildren<NavMeshAgent>();
-                nav.SetDestination(transform.position);
-                maxDucklings.AddFirst(ducklingClone);
-                manager.score++;
-                Debug.Log(maxDucklings.Count);
-            }
-            else
-            {
-                NavMeshAgent nav = ducklingClone.GetComponentInChildren<NavMeshAgent>();
-                GameObject last = maxDucklings.Last.Value;
-                ducklingClone.GetComponentInChildren<NPCFollow>().target = last.GetComponentInChildren<NPCFollow>().transform;
-                nav.SetDestination(last.transform.position);
-                maxDucklings.AddLast(ducklingClone);
-                manager.score++;
-                Debug.Log(maxDucklings.Count);
-            }
+        if (maxDucklings.Count == 0)
+        {
+            ducklingClone.GetComponentInChildren<NPCFollow>().target = transform;
+            NavMeshAgent nav = ducklingClone.GetComponentInChildren<NavMeshAgent>();
+            nav.SetDestination(transform.position);
+            maxDucklings.AddFirst(ducklingClone);
+            manager.score++;
+            Debug.Log(maxDucklings.Count);
         }
         else
         {
-            Debug.Log("Max Powerrrrr");
+            NavMeshAgent nav = ducklingClone.GetComponentInChildren<NavMeshAgent>();
+            GameObject last = maxDucklings.Last.Value;
+            ducklingClone.GetComponentInChildren<NPCFollow>().target = last.GetComponentInChildren<NPCFollow>().transform;
+            nav.SetDestination(last.transform.position);
+            maxDucklings.AddLast(ducklingClone);
+            manager.score++;
+            Debug.Log(maxDucklings.Count);
         }
     }
 }

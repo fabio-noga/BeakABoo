@@ -7,10 +7,18 @@ public class Manager : MonoBehaviour
 {
     public int score;
     public TextMeshProUGUI text;
-    public int timer;
+    public TextMeshProUGUI texttimer;
+    public float timer;
 
     void Update()
     {
-        text.text = ("Score: " + score);
+        timer -= Time.deltaTime;
+        text.text = (score.ToString());
+        texttimer.text = ((int) timer).ToString();
+
+        if (timer <= 0)
+        {
+            //End
+        }
     }
 }

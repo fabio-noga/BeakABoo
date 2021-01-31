@@ -36,6 +36,10 @@ public class NextGoal : MonoBehaviour
             transform.RotateAround(transform.position, transform.up, 180);
             transform.rotation = Quaternion.Euler(90,transform.eulerAngles.y,0f);
         }
+        else
+        {
+            ReAddGoals();
+        }
     }
 
     public void SelectNext()
@@ -45,6 +49,22 @@ public class NextGoal : MonoBehaviour
         {
             shuffledGoals.RemoveFirst();
         }
+    }
+
+    public void ReAddGoals()
+    {
+        for (int i = 0;i < Goals.Count; i++)
+        {
+            Transform temp = Goals[i];
+            randomIndex = Random.Range(i, Goals.Count);
+            Goals[i] = Goals[randomIndex];
+            Goals[randomIndex] = temp;
+        }
+        for (int i = 0; i < Goals.Count; i++)
+        {
+            shuffledGoals.AddLast(Goals[i]);
+        }
+        Debug.Log(shuffledGoals.Count);
     }
 
 }

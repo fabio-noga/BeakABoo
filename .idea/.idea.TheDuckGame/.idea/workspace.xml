@@ -47,10 +47,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/NPCFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Shaders/SpriteShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Shaders/SpriteShadows.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AddDucklingToFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GoalTp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NextGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Goal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AddDucklingToFollow.cs" />
       </list>
     </option>
   </component>
@@ -70,6 +71,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -108,7 +110,7 @@
       <workItem from="1612049809183" duration="690000" />
       <workItem from="1612050522318" duration="128000" />
       <workItem from="1612050667252" duration="40000" />
-      <workItem from="1612050787897" duration="576000" />
+      <workItem from="1612050787897" duration="9078000" />
     </task>
     <servers />
   </component>
@@ -125,5 +127,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="846" y="85" width="916" height="711" key="SettingsEditor/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1612050677943" />
+    <state x="630" y="271" key="run.anything.popup" timestamp="1612058159471">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="630" y="271" key="run.anything.popup/0.0.1920.1050/1920.152.1024.738@0.0.1920.1050" timestamp="1612058159471" />
   </component>
 </project>
