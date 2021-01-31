@@ -49,6 +49,7 @@ public class Goal : MonoBehaviour
     {
         if (collision.CompareTag("Player") /* && collision.getcomponent<bush.cs>().canspawn == true*/)
         {
+            objective.SelectNextEnemy();
             player.speed = player.speed + 0.1f;
             objective.SelectNext();
             add.AddDuckling();

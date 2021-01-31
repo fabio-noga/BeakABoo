@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Sockets;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,7 +10,12 @@ public class NextGoal : MonoBehaviour
 {
     public List<Transform> Goals = new List<Transform>();
     public LinkedList<Transform> shuffledGoals = new LinkedList<Transform>();
+    public List<Transform> Enemies = new List<Transform>();
+    public LinkedList<Transform> shuffledEnemies = new LinkedList<Transform>();
+    
     private int randomIndex;
+    private int randomIndexe;
+    private int randomIndexi;
 
     void Awake()
     {
@@ -24,6 +30,19 @@ public class NextGoal : MonoBehaviour
         for (int i = 0; i < Goals.Count; i++)
         {
             shuffledGoals.AddLast(Goals[i]);
+        }
+        
+        for (int i = 0;i < Enemies.Count; i++)
+        {
+            Transform temp = Enemies[i];
+            randomIndexe = Random.Range(i, Enemies.Count);
+            Enemies[i] = Enemies[randomIndexe];
+            Enemies[randomIndexe] = temp;
+        }
+        
+        for (int i = 0; i < Enemies.Count; i++)
+        {
+            shuffledEnemies.AddLast(Enemies[i]);
         }
     }
 
@@ -50,6 +69,26 @@ public class NextGoal : MonoBehaviour
             shuffledGoals.RemoveFirst();
         }
     }
+    
+    public void SelectNextEnemy()
+    {
+        for (int i = 0;i < Enemies.Count; i++)
+        {
+            Transform temp = Enemies[i];
+            randomIndexi = Random.Range(i, Enemies.Count);
+            Enemies[i] = Enemies[randomIndexi];
+            Enemies[randomIndexi] = temp;
+        }
+        
+        for (int i = 0; i < Enemies.Count; i++)
+        {
+            shuffledEnemies.AddLast(Enemies[i]);
+        }
+        Transform temp1;
+        temp1 = shuffledEnemies.First.Value;
+        shuffledEnemies.RemoveFirst();
+        shuffledEnemies.Last.Value = temp1;
+    }
 
     public void ReAddGoals()
     {
@@ -66,5 +105,4 @@ public class NextGoal : MonoBehaviour
         }
         Debug.Log(shuffledGoals.Count);
     }
-
 }

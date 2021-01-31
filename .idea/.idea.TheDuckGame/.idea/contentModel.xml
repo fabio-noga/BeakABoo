@@ -87,6 +87,7 @@
           <e p="AddDucklingToFollow.cs" t="Include" />
           <e p="Billboard.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
+          <e p="Enemy.cs" t="Include" />
           <e p="Goal.cs" t="Include" />
           <e p="Manager.cs" t="Include" />
           <e p="MaterialExtensions.cs" t="Include" />

@@ -54,12 +54,13 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/SpriteShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Shaders/SpriteShadows.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GoalTp.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NextGoal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Goal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AddDucklingToFollow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/MouseOver.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AddDucklingToFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Goal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NextGoal.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -118,7 +119,7 @@
       <workItem from="1612049809183" duration="690000" />
       <workItem from="1612050522318" duration="128000" />
       <workItem from="1612050667252" duration="40000" />
-      <workItem from="1612050787897" duration="13642000" />
+      <workItem from="1612050787897" duration="21268000" />
     </task>
     <servers />
   </component>
