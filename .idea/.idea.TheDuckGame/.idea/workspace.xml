@@ -22,18 +22,24 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Backup/DevilsLicense Backup/Assets/Scripts/PedroScripts/Characters.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DevilsLicense/master/DevilsLicense/Assets/Scripts/LevelButtons.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Backups e Saves/Proj/DevilsLicense/Assets/Scripts/PedroScripts/HorizontalLight.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Backups e Saves/Proj/DevilsLicense/Assets/Scripts/PedroScripts/Sign.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NextGoal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectsDeactivate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Backups e Saves/Proj/DevilsLicense/Assets/Scripts/MenuButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/17AD9609-AE06-4F2C-9315-931FF97ADCF1/2c/d7b4df23/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFollow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Billboard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DevilsLicense/master/DevilsLicense/Assets/Scripts/PedroScripts/AudioOut.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AddDucklingToFollow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DevilsLicense/master/DevilsLicense/Assets/Scripts/PauseButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../DevilsLicense/master/DevilsLicense/Assets/Scripts/MenuButton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MaterialExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../Backups e Saves/Proj/DevilsLicense/Assets/Scripts/Loader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransparentObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Backup/DevilsLicense Backup/Assets/Scripts/PedroScripts/AudioOut.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -50,8 +56,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GoalTp.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/NextGoal.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Goal.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AddDucklingToFollow.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/test.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Manager.cs" />
+        <option value="$PROJECT_DIR$/Assets/MouseOver.cs" />
       </list>
     </option>
   </component>
@@ -110,7 +118,7 @@
       <workItem from="1612049809183" duration="690000" />
       <workItem from="1612050522318" duration="128000" />
       <workItem from="1612050667252" duration="40000" />
-      <workItem from="1612050787897" duration="9078000" />
+      <workItem from="1612050787897" duration="13642000" />
     </task>
     <servers />
   </component>
