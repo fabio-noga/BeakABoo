@@ -1,22 +1,26 @@
+#Beak-a-Boo
+###Game made in the 2021's Global Game Jam**
+
+
 In Beak-A-Boo you play as a duck mommy who must find her lost ducklings in the mountains. However, she must be careful! Bouncer, the bush monster, lurks in the shadows and will eat her children if she steps into the wrong bush. Can you find the ducklings and save them from Bouncer's jaws?
 
 Lead Programmers
 
-Pedro Barbosa
-Fábio Nogueira
+- Pedro Barbosa @barbosayyy
+- Fábio Nogueira
 
 Art Director & 3D Modeller
 
-Gean Silva
+- Gean Silva
 
 Composer & Level Designer
 
-Giuseppe Accorsini
+- Giuseppe Accorsini
 
 Audio Designer
 
-António Francisco
+- António Francisco
 
 Special Thanks
 
-Zacharie (VA - Mommy Duck)
+- Zacharie (VA - Mommy Duck)
